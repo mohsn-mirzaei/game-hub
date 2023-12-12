@@ -16,13 +16,13 @@ export interface Game {
   metacritic: number;
 }
 
-interface FetchGameResponse {
+interface FetchGamesResponse {
   count: number;
   results: Game[];
 }
 
 const useGames = () => {
-  const [games, setGame] = useState<Game[]>([]);
+  const [games, setGames] = useState<Game[]>([]);
   const [error, setError] = useState("");
   const [isLoading, setLoading] = useState(false);
 
@@ -31,9 +31,9 @@ const useGames = () => {
 
     setLoading(true);
     apiClient
-      .get<FetchGameResponse>("/games", { signal: controller.signal })
+      .get<FetchGamesResponse>("/games", { signal: controller.signal })
       .then((res) => {
-        setGame(res.data.results);
+        setGames(res.data.results);
         setLoading(false);
       })
       .catch((err) => {
