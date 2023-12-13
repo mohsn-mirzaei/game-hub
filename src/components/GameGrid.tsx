@@ -11,7 +11,7 @@ interface Props {
 
 export const GameGrid = ({ gameQuery }: Props) => {
   const { data, error, isLoading } = useGames(gameQuery);
-  const skeletons = [1, 2, 3, 4, 5, 6];
+  const skeletons = [1, 2, 3, 4, 5, 6, 7, 8];
 
   return (
     <>
@@ -21,9 +21,9 @@ export const GameGrid = ({ gameQuery }: Props) => {
           sm: 1,
           md: 2,
           lg: 3,
-          xl: 5,
+          xl: 4,
         }}
-        spacing={3}
+        spacing={6}
         padding="10px"
       >
         {isLoading &&
