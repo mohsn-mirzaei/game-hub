@@ -32,4 +32,4 @@ In these tutorials I learned:
 - Write clean code like a pro
 
 You can check the deployed version of this project through the following link:
-[game-hub](https://game-hub.mohsenmirzaei.ir/)
+[game-hub](https://gamehub.mohsenmirzaei.ir/)
