@@ -1,6 +1,6 @@
 # Complete React 18 + TypeScript educational project
 
-This software is made with React 18 + TypeScript and using [Chakra UI](https://chakra-ui.com/) library.
+This project is made with React 18 + TypeScript and using [Chakra UI](https://chakra-ui.com/) library.
 
 I have used this tutorial:
 [React 18 for Beginners](https://codewithmosh.com/p/ultimate-react-part1) & [React 18: Intermediate Topics](https://codewithmosh.com/p/ultimate-react-part2)
@@ -32,4 +32,4 @@ In these tutorials I learned:
 - Write clean code like a pro
 
 You can check the deployed version of this project through the following link:
-[game-hub](https://gamehub.mohsenmirzaei.ir/)
+[game-hub](https://game-hub.mohsenmirzaei.dev/)
