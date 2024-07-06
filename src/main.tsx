@@ -8,6 +8,8 @@ import "./index.css";
 import router from "./routes";
 import theme from "./theme";
 
+import { Analytics } from "@vercel/analytics/react";
+
 const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
@@ -16,6 +18,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <QueryClientProvider client={queryClient}>
         <RouterProvider router={router} />
+        <Analytics />
         <ReactQueryDevtools />
       </QueryClientProvider>
     </ChakraProvider>
